@@ -111,7 +111,7 @@ sudo apt install -y ffmpeg libopus0 libopus-dev nodejs python3 python3-pip pytho
 ```bash
 # Create directory
 mkdir -p /home/tacman/bot/DiscordBot
-cd /home/tacman/bot/DiscordBot
+cd /home/<user>/bot/DiscordBot
 
 # Create and activate virtualenv
 python3 -m venv venv
@@ -149,7 +149,7 @@ After=network.target
 [Service]
 Type=simple
 User=tacman
-WorkingDirectory=/home/tacman/bot/DiscordBot
+WorkingDirectory=/home/<user>/bot/DiscordBot
 ExecStart=/home/tacman/bot/DiscordBot/venv/bin/python3 bot.py
 Restart=always
 RestartSec=5
@@ -173,17 +173,6 @@ journalctl -u amg-bot -f
 ```
 
 ---
-
-## 🔄 Updating the Bot
-
-When updates are deployed to your web host (`https://homeonmypc.uk`):
-
-```bash
-cd /home/tacman/bot/DiscordBot && \
-curl -s -O https://homeonmypc.uk/bot.py && \
-curl -s -O https://homeonmypc.uk/music.py && \
-sudo systemctl restart amg-bot
-```
 
 ---
 
