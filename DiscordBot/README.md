@@ -110,7 +110,7 @@ sudo apt install -y ffmpeg libopus0 libopus-dev nodejs python3 python3-pip pytho
 
 ```bash
 # Create directory
-mkdir -p /home/tacman/bot/DiscordBot
+mkdir -p /home/<user>/bot/DiscordBot
 cd /home/<user>/bot/DiscordBot
 
 # Create and activate virtualenv
@@ -148,9 +148,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=tacman
+User=<user>
 WorkingDirectory=/home/<user>/bot/DiscordBot
-ExecStart=/home/tacman/bot/DiscordBot/venv/bin/python3 bot.py
+ExecStart=/home/<user>/bot/DiscordBot/venv/bin/python3 bot.py
 Restart=always
 RestartSec=5
 StandardOutput=journal
