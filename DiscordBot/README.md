@@ -212,3 +212,7 @@ sudo systemctl restart amg-bot
 | `/volume <1-100>` | Everyone | Adjust bot output volume. |
 | `/autovolume` | Everyone | Toggle automatic loudness equalization (boosts quiet tracks). |
 | `/join` / `/leave` | Everyone | Connect or disconnect the bot from voice. |
+
+
+
+This application is so lightweight, it will actually run on a smart phone as a host for it
